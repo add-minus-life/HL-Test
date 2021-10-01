@@ -1,0 +1,37 @@
+{
+  "name": "webpack-test",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "webpack.config.js",
+  "sideEffets":[
+    "./src/math.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "watch": "webpack --watch ",
+    "buildD": "webpack --config webpack.dev.js",
+    "buildP":"webpack --config webpack.prod.js",
+    "server": "node dev-server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^5.0.0",
+    "express": "^4.17.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.2",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-middleware": "^5.2.1",
+    "webpack-dev-server": "^3.8.2",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
